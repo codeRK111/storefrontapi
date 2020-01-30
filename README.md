@@ -1,3 +1,13 @@
+Instruction By Nitikesh:
+
+yarn install
+docker-compose up
+yarn restore
+yarn migrate
+yarn dev
+
+NOTE: Should now run on localhost:8080
+
 REST API backend for vue-storefront
 ===================================
 
