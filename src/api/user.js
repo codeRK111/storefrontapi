@@ -82,7 +82,7 @@ export default ({config, db}) => {
     }
     try {
       const decodedToken = jwt.decode(req.body ? decryptToken(req.body.refreshToken, config.authHashSecret ? config.authHashSecret : config.objHashSecret) : '', config.authHashSecret ? config.authHashSecret : config.objHashSecret)
-
+      console.log("Niti Test : "+decodedToken);
       if (!decodedToken) {
         return apiStatus(res, 'Invalid refresh token provided', 500);
       }
